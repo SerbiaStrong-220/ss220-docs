@@ -1,0 +1,35 @@
+site_name: SS220 Developer Documentation
+repo_url: https://github.com/SerbiaStrong-220/space-station-14
+repo_name: SerbiaStrong-220/space-station-14
+copyright: Copyright &copy; 2023 SS220. Written and maintained by TheArturZh.
+
+theme:
+    name: material
+    language: ru
+    palette:
+        # Palette toggle for dark mode
+        - scheme: slate
+          toggle:
+            icon: material/brightness-4
+            name: Switch to light mode
+        - scheme: default
+          toggle:
+            icon: material/brightness-7 
+            name: Switch to dark mode
+
+    features:
+    - search.suggest
+    - search.highlight
+    - search.share
+    - navigation.footer
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/discord 
+      link: https://discord.gg/ss220
