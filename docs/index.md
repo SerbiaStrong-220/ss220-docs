@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# Главная
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<p align="center"> <img alt="Space Station 14" width="250" height="250" src="https://raw.githubusercontent.com/SerbiaStrong-220/space-station-14/master/logo.png" /></p>
 
-## Commands
+!!! note ""
+	Эта вики предназначена для разработчиков. Вики для игроков находится [здесь](https://station14.ru/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0).
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+!!! warning ""
+	Вики находится на этапе заполнения, поэтому большая часть информации тут отсутствует. Её можно найти в документации от официальных разработчиков SS14 [(вот здесь)](https://docs.spacestation14.com).
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Для начинающих
+[**Сборка и запуск локального сервера**](localhost.md)

@@ -33,3 +33,8 @@ extra:
   social:
     - icon: fontawesome/brands/discord 
       link: https://discord.gg/ss220
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
