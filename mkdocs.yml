@@ -22,6 +22,7 @@ theme:
     - search.highlight
     - search.share
     - navigation.footer
+    - navigation.sections
 
 plugins:
   - search
@@ -38,3 +39,4 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - md_in_html
