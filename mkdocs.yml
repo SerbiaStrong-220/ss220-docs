@@ -29,6 +29,7 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
+  - git-authors
 
 extra:
   social:
@@ -40,3 +41,18 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - md_in_html
+
+nav:
+  - Главная: index.md
+  - Сборка и запуск локального сервера: localhost.md
+  - Диздоки:
+    - Исследователи с Сиерры(Infinity):
+      - disdocs/sierra/index.md
+      - disdocs/sierra/backstory-gen.md
+      - disdocs/sierra/planet-gen.md
+  - Маппинг:
+    - mapping/mapping.md
+  - Разработка:
+    - development/dev-introduction.md
+    - development/ecs.md
+    - development/creating-simple-system.md

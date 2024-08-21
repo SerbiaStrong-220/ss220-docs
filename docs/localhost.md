@@ -11,7 +11,7 @@
 
 * Git - [https://git-scm.com](https://git-scm.com)
 * Python 3.7 или новее - [https://www.python.org](https://www.python.org) - качать именно с оф. сайта а не с Windows Store иначе могут возникнуть проблемы со скриптом
-* .NET 7 SDK x64 - [https://dotnet.microsoft.com/en-us/download](https://dotnet.microsoft.com/en-us/download)
+* .NET 8 SDK x64 - [https://dotnet.microsoft.com/en-us/download](https://dotnet.microsoft.com/en-us/download)
 
 ## Клонирование кода
 После установки всего вышеперечисленного теперь нужно скачать код проекта через Git.
