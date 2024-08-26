@@ -30,6 +30,9 @@
 
 [**JetBrains Rider (платно)**](https://www.jetbrains.com/rider/)
 
+Написание некоторых элементов игры, а именно [прототипов](prototypes.md), производится на языке сериализации YAML. О нём и о том, как он используется, рассказывается на странице о [прототипах](prototypes.md).	
+Для упрощения работы с прототипами был создан [специальный плагин для VSCode](https://marketplace.visualstudio.com/items?itemName=slava0135.robust-yaml). Однако, для работы этого плагина вам необходимо будет устаоновить любой плагин на интерпретацию YAML для VSCode.
+
 Также, для того, чтобы публиковать свои изменения и держать наш репозиторий под контролем, мы используем систему управления версиями - [**Git**](https://git-scm.com/).
 
 [**Шпаргалка по Git'у**](https://training.github.com/downloads/ru/github-git-cheat-sheet/).
@@ -40,5 +43,6 @@
 Для работы с билдом вам нужна будет [**локальная версия нашего репозитория и локальный сервер при нем**](../localhost.md).
 
 - [ECS](ecs.md)
+- [Прототипы](prototypes.md)
 - [Создание простейшей системы с компонентом](creating-simple-system.md)
 - [Официальная документация Space Station 14 и Robust Toolbox от Space Wizards](https://docs.spacestation14.com/)

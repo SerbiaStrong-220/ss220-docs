@@ -11,4 +11,6 @@
 ## Для начинающих
 [**Сборка и запуск локального сервера**](localhost.md)
 
+[**Прототипы**](development/prototypes.md)
+
 [**Введение в разработку**](development/dev-introduction.md)
