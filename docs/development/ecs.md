@@ -111,7 +111,7 @@ private void OnHit(Entity<DamagableComponent> entity, ref EntityHitEvent args)
 ```csharp
 SubscribeLocalEvent<BroadcastEvent>(OnBroadcast);
 ```
-Еще, есть и networked-ивенты, но о них и о сетевом состоянии компонентов и энтити будет [позже]().
+Еще, есть и networked-ивенты, но о них и о сетевом состоянии компонентов и энтити будет [позже](basic-networking.md).
 
 ### Способы обращения к компонентам на энтити и их проверка
 Продолжим с методом `Damage()`, нас привлекает эта строчка:
