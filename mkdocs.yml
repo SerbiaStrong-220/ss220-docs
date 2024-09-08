@@ -55,4 +55,8 @@ nav:
   - Разработка:
     - development/dev-introduction.md
     - development/ecs.md
+    - development/prototypes.md
+    - development/localisation.md
+    - development/basic-networking.md
     - development/creating-simple-system.md
+    - development/ss220-guidelines.md
