@@ -1,10 +1,10 @@
-# Маппинг
+# С чего начать
 
 <small>У официальных разработчиков так же есть [**англоязычный гайд по маппингу**](https://docs.spacestation14.io/en/content/mapping).
 
 В данный момент следующими картами заняты:
 
-* **Delta** - VladIsLove ( Discord: vladislove._. )
+* **Delta** - ??? ( Discord: vladislove._. )
 * **Frankenstein** - TheArturZh ( Discord: thearturzh )
 
 </small>
