@@ -53,11 +53,18 @@ nav:
   - Маппинг:
     - Обучение:
       - mapping/general.md
-      - mapping/commands.md
       - mapping/controls.md
-      - mapping/render.md
-      - mapping/testing.md
-      - mapping/checklist.md
+      - mapping/starting.md
+      - Полезные статьи:
+        - mapping/faq.md
+        - mapping/testing.md
+        - mapping/render.md
+        - mapping/vv.md
+        - mapping/decalling.md
+        - mapping/atmos.md
+        - mapping/engineering.md
+        - mapping/parallaxes.md
+        - mapping/dangeouns.md
       - Моя первая станция:
         - Этап 1 - Проектирование:
           - mapping/1station/part1/idea.md # Идея, вдохновение
