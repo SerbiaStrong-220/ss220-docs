@@ -51,7 +51,60 @@ nav:
       - disdocs/sierra/backstory-gen.md
       - disdocs/sierra/planet-gen.md
   - Маппинг:
-    - mapping/mapping.md
+    - Обучение:
+      - mapping/general.md
+      - mapping/controls.md
+      - mapping/starting.md
+      - Полезные статьи:
+        - mapping/faq.md
+        - mapping/testing.md
+        - mapping/render.md
+        - mapping/vv.md
+        - mapping/decalling.md
+        - mapping/atmos.md
+        - mapping/engineering.md
+        - mapping/parallaxes.md
+        - mapping/dangeouns.md
+      - Моя первая станция:
+        - mapping/1station/loremispum.md # заглушка
+      #  - Этап 1 - Проектирование:
+      #    - mapping/1station/part1/idea.md # Идея, вдохновение
+      #    - mapping/1station/part1/schematic.md # Чертежи
+      #    - mapping/1station/part1/dd.md # Дизайн-Документ 
+      #  - Этап 2 - Маппинг:
+      #    - mapping/1station/part2/preparation.md
+      #    - Отделы:
+      #      - mapping/1station/part2/general.md # Общее
+      #      - mapping/1station/part2/service.md # Сервис
+      #      - mapping/1station/part2/medical.md # Мед
+      #      - mapping/1station/part2/eng.md # Инженерный
+      #      - mapping/1station/part2/rnd.md # Научный
+      #      - mapping/1station/part2/security.md # Охранный
+      #      - mapping/1station/part2/dia.md # ДВД
+      #      - mapping/1station/part2/command.md # Командный
+      #      - mapping/1station/part2/techs.md # Технические/Секретки
+      #  - Этап 3 - Инфраструктура:
+      #    - mapping/1station/part3/lights.md # свет
+      #    - mapping/1station/part3/energetic.md # всё об электричестве
+      #    - mapping/1station/part3/atmos.md # всё об атмосе
+      #    - mapping/1station/part3/utilisation.md # всё о трубах мусора
+      #    - mapping/1station/part3/mailPosts.md # всё о почте
+      #    - mapping/1station/part3/cameras.md # всё о камерах
+      #    - mapping/1station/part3/warppoints.md # всё о маяках и варпах
+      #    - mapping/1station/part3/wallmounts.md # настенные предметы
+      #    - mapping/1station/part3/spawners.md # всё о спавнерах
+      #  - Этап 4 - Релизная подготовка:
+      #    - mapping/1station/part4/prototype-station.md #
+      #    - mapping/1station/part4/worktest.md #
+      #    - mapping/1station/part4/parallaxes.md #
+      #    - mapping/1station/part4/camera-viewable-maps.md #
+  #  - Наши работы:
+  #    - Открытые диздоки:
+  #      - mapping/dd/frankenstein.md
+  #      - mapping/dd/axioma.md
+  #      - mapping/dd/eclipse.md
+  #      - mapping/dd/donuts.md
+  #      - mapping/dd/frankenstein.md
   - Разработка:
     - development/dev-introduction.md
     - development/ecs.md
