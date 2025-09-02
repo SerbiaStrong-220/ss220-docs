@@ -105,6 +105,22 @@ nav:
   #      - mapping/dd/eclipse.md
   #      - mapping/dd/donuts.md
   #      - mapping/dd/frankenstein.md
+  - Спрайтинг:
+    - spriting/style.md
+    - Базовая теория:
+      - spriting/introduction.md
+      - spriting/lineart.md
+      - spriting/anti-aliased.md
+      - spriting/color.md
+      - spriting/shading.md
+      - spriting/axonometry.md
+    # - Углубленная теория:
+    - spriting/software.md
+    - Практика:
+      - spriting/firstsprite.md 
+      - spriting/rsi.md
+    #- spriting/terminology.md
+
   - Разработка:
     - development/dev-introduction.md
     - development/ecs.md
