@@ -160,7 +160,7 @@ public sealed class SendWorldMessageSystem : EntitySystem
 
 Немного усложним задачу: сделаем так, чтобы в мир выводился текст, **который заранее будет указан в прототипе**.
 
-Начнём с того, что нам нужно добавить место, где будет храниться этот текст. Как мы може вспомнить, компоненты предназначены для того, чтобы **хранить данные**, необходимые для работы системы. Соответственно, для этого нужно создать поле в классе прототипа.
+Начнём с того, что нам нужно добавить место, где будет храниться этот текст. Как мы можем вспомнить, компоненты предназначены для того, чтобы **хранить данные**, необходимые для работы системы. Соответственно, для этого нужно создать поле в классе прототипа.
 
 Вернёмся к компоненту и добавим поле `Message`:
 ```csharp
@@ -170,16 +170,24 @@ namespace Content.Shared.SS220.Tutorial;
 public sealed partial class SendWorldMessageComponent : Component
 {
     [DataField]
-    public string Message = "Hello, World!";
+    public LocId Message = "send-world-message-base";
 }
 ```
-Для того, чтобы поле можно было изменять в прототипе, необходимо добавить атрибут `[DataField]`, что мы и сделали. Также, мы присвоили полю стандартное значение, которое будет выводится, если в прототипе не было указано никакого текста.
+
+Для того, чтобы поле можно было изменять в прототипе, необходимо добавить атрибут `[DataField]`, что мы и сделали. Также, мы присвоили полю стандартное значение, которое будет храниться в поле компонента, если в прототипе не было указано никакого текста.
+
+Обратим внимание, что вместо понятного нам `"Hello world!"` стандартное значение поля `Message` это набор слов написанных в kebab-cas (так-называют-вот-так-написанный-текст). Тип поля `LocId` этот тип отвечает за ID строки локализации. Явно вписывать текст не стоит, так как при локализации нашего сообщения станет невозможной. Добавим новый файл локализации, чтобы в нашем поле лежал действительный ID локализации.
+
+`Resources\Locale\ru-RU\ss220\tutorial\send-world-message\components\send-world-message-component.ftl`:
+```
+send-world-message-base = Hello world!
+```
 
 Вернёмся к обработчику события в системе и задействуем созданное поле:
 ```csharp
 private void OnUseInHand(Entity<SendWorldMessageComponent> entity, ref UseInHandEvent args)
 {
-    _popup.PopupEntity(entity.Comp.Message, entity.Owner);
+    _popup.PopupEntity(Loc.GetString(entity.Comp.Message), entity.Owner);
 }
 ```
 Простым обращением к компоненту через передаваемое в аргументах энтити мы получили наше поле и передали его в аргументы метода `PopupEntity()`.  
@@ -199,8 +207,16 @@ private void OnUseInHand(Entity<SendWorldMessageComponent> entity, ref UseInHand
   - type: Item
     size: Small
   - type: SendWorldMessage
-    message: PROKLYATIE 220!
+    message: send-world-message-curse-220
 ```
+
+и добавим эту строчку в наш файл локализации:
+`Resources\Locale\ru-RU\ss220\tutorial\send-world-message\components\send-world-message-component.ftl`:
+```
+send-world-message-base = Hello world!
+send-world-message-curse-220 = PROKLYATIE 220!
+```
+
 Обратим внимание на то, что по умолчанию поля, помеченные как `DataField`, читаются с прототипов также, как и название самого поля, но всегда начинаются с нижнего регистра.
 
 Взглянем на результат в игре:
