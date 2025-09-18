@@ -122,10 +122,14 @@ nav:
     #- spriting/terminology.md
 
   - Разработка:
-    - development/dev-introduction.md
-    - development/ecs.md
-    - development/prototypes.md
-    - development/localisation.md
-    - development/basic-networking.md
-    - development/creating-simple-system.md
+    - Обучение:
+      - development/dev-introduction.md
+      - development/creating-simple-system.md
+      - development/ecs.md
+      - development/prototypes.md
+      - development/localization.md
+      - development/basic-networking.md
     - development/ss220-guidelines.md
+    - advanced-development/introduction.md 
+    - Advanced:
+      - advanced-development/performance-troubleshooting.md  

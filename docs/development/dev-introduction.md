@@ -46,3 +46,4 @@
 - [Прототипы](prototypes.md)
 - [Создание простейшей системы с компонентом](creating-simple-system.md)
 - [Официальная документация Space Station 14 и Robust Toolbox от Space Wizards](https://docs.spacestation14.com/)
+- [Гайд от активного разработчика на английском](https://hackmd.io/@Slart/S1hsoGFm1l#The-Slarti-guide-WIP)
