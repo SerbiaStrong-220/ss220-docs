@@ -14,3 +14,11 @@
 [**Прототипы**](development/prototypes.md)
 
 [**Введение в разработку**](development/dev-introduction.md)
+
+[**Спрайтинг**](spriting/introduction.md)
+
+[**Маппинг**](mapping/general.md)
+
+## Продвинутые гайды
+
+[**Продвинутая разработка**](advanced-development/introduction.md)
