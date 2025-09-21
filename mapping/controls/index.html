@@ -1,0 +1,2511 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../general/">
+      
+      
+        <link rel="next" href="../starting/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Управление и термины - SS220 Developer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../.." title="SS220 Developer Documentation" class="md-header__button md-logo" aria-label="SS220 Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SS220 Developer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Управление и термины
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Поделиться" aria-label="Поделиться" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SerbiaStrong-220/space-station-14" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SerbiaStrong-220/space-station-14
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SS220 Developer Documentation" class="md-nav__button md-logo" aria-label="SS220 Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SS220 Developer Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SerbiaStrong-220/space-station-14" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SerbiaStrong-220/space-station-14
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Главная
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../localhost/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Сборка и запуск локального сервера
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Диздоки
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Диздоки
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Исследователи с Сиерры(Infinity)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Исследователи с Сиерры(Infinity)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../disdocs/sierra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Описание идеи
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../disdocs/sierra/backstory-gen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Генерация бэкстори
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../disdocs/sierra/planet-gen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Диздок генератора планеты для экспедиции
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Маппинг
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Маппинг
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Обучение
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Обучение
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    С чего начать. Основы.
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Управление и термины
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Управление и термины
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Терминология
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Управление и команды
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Управление и команды">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Команды
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Клавиши
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Хоткеи
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f5-" class="md-nav__link">
+    <span class="md-ellipsis">
+      F5 - Меню управления
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="F5 - Меню управления">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Панель спавна сущностей
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f6-" class="md-nav__link">
+    <span class="md-ellipsis">
+      F6 - Панель размещения тайлов
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f8-" class="md-nav__link">
+    <span class="md-ellipsis">
+      F8 - Панель размещения декалей
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f7-" class="md-nav__link">
+    <span class="md-ellipsis">
+      F7 - Меню администратора
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-" class="md-nav__link">
+    <span class="md-ellipsis">
+      B - Меню песочницы
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#09012025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Режим редактирования карт (не рекомендуется на момент 09.01.2025)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../starting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Первые труды
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_4" id="__nav_4_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Полезные статьи
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Полезные статьи
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Полезные советы и FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Тестирование карты
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../render/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как сделать рендер карты
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../vv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как работать с View Variables (VV)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../decalling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как научиться красиво декалить?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atmos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как прокладывать атмосферику
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как прокладывать электропитание
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../parallaxes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как создать и установить свой параллакс
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dangeouns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как создать свой процедурный данж
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_5" id="__nav_4_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Моя первая станция
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Моя первая станция
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../1station/loremispum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    О разделе
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Спрайтинг
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Спрайтинг
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/style/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Визуальный стиль
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Базовая теория
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Базовая теория
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Глава 0. Введение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/lineart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Глава 1. Линии
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/anti-aliased/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Глава 2. Сглаживание
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/color/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Глава 3. Цвет
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/shading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Глава 4. Свет и тень
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/axonometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Глава 5. Аксонометрия
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Программное обеспечение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Практика
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Практика
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/firstsprite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Твой первый спрайт
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/rsi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Работа с RSI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Разработка
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Разработка
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Обучение
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Обучение
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/dev-introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Введение в разработку
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/creating-simple-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Создание простейшей системы с компонентом
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/ecs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ECS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/prototypes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Прототипы
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/localization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Локализация
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/basic-networking/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Базовый неткод в Robust Toolbox
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/ss220-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Наставления по работе с репозиторием SS220
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-development/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Продвинутая разработка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Advanced
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-development/performance-troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Локализация проблем производительности
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Терминология
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Управление и команды
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Управление и команды">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Команды
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Клавиши
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Хоткеи
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f5-" class="md-nav__link">
+    <span class="md-ellipsis">
+      F5 - Меню управления
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="F5 - Меню управления">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Панель спавна сущностей
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f6-" class="md-nav__link">
+    <span class="md-ellipsis">
+      F6 - Панель размещения тайлов
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f8-" class="md-nav__link">
+    <span class="md-ellipsis">
+      F8 - Панель размещения декалей
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f7-" class="md-nav__link">
+    <span class="md-ellipsis">
+      F7 - Меню администратора
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-" class="md-nav__link">
+    <span class="md-ellipsis">
+      B - Меню песочницы
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#09012025" class="md-nav__link">
+    <span class="md-ellipsis">
+      Режим редактирования карт (не рекомендуется на момент 09.01.2025)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">Управление и термины</h1>
+<h2 id="_2">Терминология</h2>
+<p>Предполагается, что вы так или иначе уже сталкивались с базовыми терминами профессионального языка мапперов. Но даже на тот случай, когда для вас слова "Тайл" "Декаль" "Мапа" и т.д. - чужды, вы можете сориентироваться по этой таблице.</p>
+<table>
+<thead>
+<tr>
+<th>Термин</th>
+<th>Определение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Маппинг</td>
+<td>Занятия построения пространства, включающее в себя множество элементов. Маппинг может самым разным, кто-то маппит огромные 3D пространства (больше Level-Design), кто-то маппит как мы 2D пространство песочницы, кто-то работает профессионально и маппит спутниковые и маршрутные карты на реальной мировой карте.</td>
+</tr>
+<tr>
+<td>Маппер</td>
+<td>Соответственно человек, что занимается маппингом</td>
+</tr>
+<tr>
+<td>Мапа (Map)</td>
+<td>Она же Карта. Это полотно (космос), на котором располагаются гриды*. Полотно также принято называть "Сектором". Гриды могут располагаться на разных картах, а каждая карта имеет свой ID слота карты (MapID). Он не сохраняется за конкретной картой, а используется в игровой сессии для определения, за каким порядковым числом закреплено определённое полотно. Айди слота текущий карты можно узнать: через F3, через F7 и при помощи <code>lsmap</code></td>
+</tr>
+<tr>
+<td>Ентити (Entity)</td>
+<td>Они же сущности или объекты. Зачастую это всё то, что помимо существования физически имеет и функциональность. Энтити может быть довольно много вещей, так как сущность понятие обширное. Если вы видите где-то упоминание Ентити, ЕнтитиID - то имеется в виду сам объект.</td>
+</tr>
+<tr>
+<td>Грид (Grid)</td>
+<td>Это единая сетка размещённых объектов. То есть совокупность соединённых тайлов друг с другом - создают грид, сетку этих тайлов в одной системе. Эта сетка заставляет тайлы двигаться вместе, а соответственно и все объекты на этой сетке. То есть, гридом является например шаттл. Станция, между прочим - то же является гридом, но очень большим. <br><br>Для одной системы должен соответствовать в идеале один грид. Гриды - ресурсоёмкий объект, а потому нежелательно их плодить в большом множестве. Существует два типа сохраненённых карт, как грид (то есть без полотна) и как карта. Необязательно иметь несколько гридов, чтобы сохранить грид как карту.</td>
+</tr>
+<tr>
+<td>Тайл (Tile)</td>
+<td>Это покрытие, любой его вид. Он используется для построения гридов и последующего размещения на нём объектов.<br><br>Чтобы тайлы создали правильный грид, необходимо помнить, что тайлы нужно соединять последовательно. Сперва ставите первый тайл, а от него строите последующие тайлы. Нельзя без первого тайла сразу строить при множество тайлов при помощи Shift + ЛКМ или Ctrl + ЛКМ. Это приведёт к созданию большого числа гридов.</td>
+</tr>
+<tr>
+<td>Декаль (Decal)</td>
+<td>Декоративный объект, размещаемый на тайле, чтобы подчеркнуть его текстурность, выделить как-либо определённое покрытие под определённый объект или создать дополнительное повествование пространства путём добавления декалей пыли, мусоры, ожогов и так далее.</td>
+</tr>
+<tr>
+<td>Юмл (.yml)</td>
+<td>Расширение файла карты или грида, он же "точка юмээл/ямл/юмл". Также в пространстве разработки, <code>.yml</code> - принято называть файлами прототипов. Не будет ошибкой сказать, что карта или грид - это очень большие прототипы. Все свои работы вы обязательно сохраняете в расширении <code>.yml</code></td>
+</tr>
+<tr>
+<td>Инициализация, инит, замороженность (init)</td>
+<td>Карта может находиться в двух состояниях - инициализирована/инитнута/заморожена и не инициализирована/не ининтнута/ не заморожена. При инициализации карты происходят необратимые события, в указанные объекты спавнеров определяется рандомно какой объект будет заспавнен, контейнеры что предполагают в себе наполняемость после инициализации - наполняются и так далее. Мы никогда и ни в коем случае не сохраняем инициализированные карты и не используем их. <br><br>Если во время маппинга вы сохранили карту будучи инициализированной или маппили уже на инитнутой карте, а потом хотите, чтобы эту работу ввели в игру - забудьте, вы можете распрощаться с этой картой.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">Управление и команды</h2>
+<p>Первоначально, и естественно, это освоиться с управлением. Я ожидаю, что вы открыли эту статью уже после того как установили локальный сервер или зашли на специализированный под маппинг сервер и получили необходимые права.</p>
+<p>В первую очередь, чтобы получить доступ ко всем заветным действиям мапперов - необходимо зайти в игру как администратор через присоединение как наблюдатель, или будучи в игре персонажем, написать: <code>aghost</code></p>
+<p>Собственно, представляю таблицу ниже с пояснениями о том, что и за что отвечает:</p>
+<h3 id="_4">Команды</h3>
+<table>
+<thead>
+<tr>
+<th>Команда</th>
+<th>Пояснение к команде</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>aghost</code></td>
+<td>Режим админ-наблюдателя, в нём же происходит взаимодействия с игровой песочницей и весь маппинг. Его мы прописываем в первую очередь и <strong>обязательно на инициализированной</strong> карте.</td>
+</tr>
+<tr>
+<td><code>mapping</code> &lt;<code>id слота карты</code>&gt;</td>
+<td>создаёт пустую <strong>замороженную</strong> карту с заданным айди. Принудительно включает одиночный режим редактора карт, но это может быть отключено на онлайн-серверах. // <em>UPD: Так как на момент 09.01 - редактор карт сырой - не рекомендуется к использованию</em><br><br><strong>Пример:</strong><br><em>mapping 1</em></td>
+</tr>
+<tr>
+<td><code>scene</code> &lt;<code>GameplayState</code>/<code>MappingState</code>&gt;</td>
+<td>Включает или выключает режим редактора карт. Соответственно <code>GameplayState</code> - включает обычный режим. <code>MappingState</code> - включает режим редактора карт.<br><br><strong>Пример:</strong><br><em>scene MappingState</em></td>
+</tr>
+<tr>
+<td><code>lsmap</code></td>
+<td>Выводит списком все занятые слоты карт по порядку. Пример подобной строки: <code>50: Map Entity, init: true, paused false,  grids: 414123</code>, где:<br><strong>ID слота карты</strong>: 50<br><strong>Название карты</strong>: Map Entity<br><strong>Инициализирована ли карта</strong>: true<br><strong>ID гридов на карте</strong>: 414123</td>
+</tr>
+<tr>
+<td><code>loadmap</code> &lt;<code>id слота карты</code>&gt; &lt;<code>путь до карты</code>&gt;</td>
+<td>Загружает уже существующую карту в <strong>замороженном состоянии</strong>. В качестве ID слота карты - указывается пустой, ещё не занятый другой картой слот. Путь до карты берётся из корневой директории сервера <code>Resources/Maps</code> и <code>bin/Content.Server/data</code>.<br><br><strong>Пример:</strong><br><em>loadmap 500 /Maps/SS220/frankenstein.yml</em></td>
+</tr>
+<tr>
+<td><code>tp</code> &lt;<code>координата X</code>&gt; &lt;<code>координата Y</code>&gt; &lt;<code>id слота карты</code>&gt;</td>
+<td>Перемещает вас на нужное полотно (карту) по заданным координатам и ID слота карты.<br><br><strong>Пример:</strong><br><em>tp 0 0 500</em></td>
+</tr>
+<tr>
+<td><code>savemap</code> &lt;<code>id слота карты</code>&gt; &lt;<code>путь для сохраняемой карты</code>&gt;</td>
+<td>Сохраняет карту по id слоту по нужному вам пути. <strong>Примечание:</strong> все карты сохраняются в директорию <code>bin/Content.Server/data</code>, а не в <code>Resources/Maps</code>. Переносить из data в Maps их нужно вручную.<br><br><strong>Пример:</strong><br><em>savemap 500 /MyCoolFirstMaps/MyFirstMap.yml</em></td>
+</tr>
+<tr>
+<td><code>rmmap</code> &lt;<code>id слота карт</code>&gt;</td>
+<td>Удаляет карту по указанному id слоту из игровой сессии (не сам файл).<br><br><strong>Пример:</strong><br><em>rmmap 500</em></td>
+</tr>
+<tr>
+<td><code>loadgrid</code> &lt;<code>id слота карты</code>&gt; &lt;<code>путь до нужного грида</code> &gt; &lt;<code>координата X</code>&gt; &lt;<code>координата Y</code>&gt;</td>
+<td>Загружает на <strong>уже существующую</strong> карту по id слота карты дополнительно грид, с указанного пути и предварительно заданными координатами появления.<br><br><strong>Пример:</strong><br><em>loadgrid 500 /Maps/SS220/Shuttles/cargo_shuttle.yml</em> 250 -250</td>
+</tr>
+<tr>
+<td><code>pos</code></td>
+<td>Возвращает значение EntID грида на котором вы находитесь, а также значение координаты X и Y. Если вы находитесь не на гриде - вернёт EntID самой карты.</td>
+</tr>
+<tr>
+<td><code>griddrag</code></td>
+<td>Позволяет вам <strong>зажатием</strong> левой кнопки мыши - перетягивать грид из стороны в сторону. Очень полезно, в случае когда один грид наложился на другой или когда надо примерить подходит ли стыковку к шаттлу.</td>
+</tr>
+<tr>
+<td><code>savegrid</code> &lt;<code>id грида</code>&gt; &lt;<code>путь по которому надо сохранить</code>&gt;</td>
+<td>Сохраняет грид по id грида (можно узнать через F3/F7/<code>lsmap</code>) по указанному вами пути. Чаще всего используется для сохранения шаттлов, так как их требуется сохранять как отдельные гриды, а не карты. <strong>Примечание:</strong> все гриды сохраняются в директорию <code>bin/Content.Server/data</code>, а не в <code>Resources/Maps</code>. Переносить из data в Maps их нужно вручную. <br><br><strong>Пример:</strong><br><em>savegrid 414123 /MyCoolFirstMaps/MyFirstShuttle.yml</em></td>
+</tr>
+<tr>
+<td><code>mapinit</code> &lt;<code>id слота карты</code>&gt;</td>
+<td><strong>Размараживает</strong> (<strong>инициализирует</strong>) карту по заданному вами ID.<br><br><strong>Пример:</strong><br><em>mapinit 500</em></td>
+</tr>
+<tr>
+<td><code>forcemap</code> &lt;<code>ID карты</code>&gt;</td>
+<td>Используется обычно перед началом раунда для того, чтобы принудительно указать, на какой карте должен начаться раунд. <br><br>Уточнение: в Tools версии билда вы предпочительно не будете грузиться в лобби и появляться сразу же на Dev станции. Нежелательно использовать <code>forcemap</code> в Tools версии - так как полноценно нужного результата вы не добьётесь. Вместо этого используйте <code>forcemap</code> только на Release версии билда, чтобы вместе с картой загружались все необходимые родительские и дочерние прототипы гридов.<br><br><strong>Пример:</strong><br><em>forcemap Frankenstein</em></td>
+</tr>
+<tr>
+<td><code>fixgridatmos</code> &lt;<code>ID грида</code>&gt;</td>
+<td>Перезаполняет тайлы карты атмосом, который задан по умолчанию для тайлов, или который выставлен принудительно специальными атмос-фиксерами. Для удобства, при написании <code>fixgridatmos</code> выбрать грид на котором вы находитесь на текущий момент, можно быстро через <code>TAB</code>.<br><br><strong>Пример</strong>:<br><em>fixgridatmos 414123</em></td>
+</tr>
+<tr>
+<td><code>colornetwork</code> &lt;<code>uID одной из труб</code>&gt; <code>Pipe</code> &lt;<code>HEX значение цвета</code>&gt;</td>
+<td>Перекрашивает полностью систему труб в нужный вам цвет. Система (участок, который будет перекрашен) определяется по одной из труб и её uID (можно увидеть в VV или нажав правой кнопкой мыше по трубе). В конце команды указывается hex-код значения цвета, который вам необходим.<br><br><strong>Пример:</strong><br><em>colornetwork 153743 Pipe <code>#0f0f0f</code></em></td>
+</tr>
+<tr>
+<td><code>tilewalls</code></td>
+<td>Заменяет тайлы плиток на тайлы покрытия под всеми стенами станции. Не заменяет под окнами. Может заменить тайл решётки на тайл покрытия под диагональными стенами. Используйте с уверенностью в своих действиях.</td>
+</tr>
+<tr>
+<td><code>variantize</code> &lt;<code>ID грида</code>&gt;</td>
+<td>Для тайлов, у которых имеется несколько вариаций спрайта - позволяет рандомизировать их вариацию на определённом гриде.<br><br><strong>Пример:</strong><br><em>variantize 433425</em></td>
+</tr>
+<tr>
+<td><code>toggledecals</code></td>
+<td>Переключает отображение декалей. Полезно для просмотра в особо загруженных местах декалями на предмет ошибок маппинга тайлов.</td>
+</tr>
+<tr>
+<td><code>toggleautosave</code> &lt;<code>ID слота карты</code>&gt;</td>
+<td>Переключает режим автосохранения карты для определённого слота карты. Автосохранения по стандарту располагаются в <code>bin/Content.Server/data/Autosaves</code><br><br><strong>Пример:</strong><br><em>toggleautosave 50</em></td>
+</tr>
+<tr>
+<td><code>nodevis</code></td>
+<td>Переключает отображение сетки нод. Позволяет в своеобразном формате просмотреть стеку проложенных проводов и труб по их визуализации гриф.</td>
+</tr>
+<tr>
+<td><code>nodevisfilter</code> &lt;<code>ID группы</code>&gt;</td>
+<td>Отключает отображение конкретной сетки граф по указанной ID группе графы. Узнать ID группу наведясь на один из элементов сетки графа - значение <code>groud id</code>.<br><br><strong>Пример:</strong><br><em>nodevisfilter Pipe</em></td>
+</tr>
+<tr>
+<td><code>zoom</code> &lt;<code>кратность приближения</code>&gt;</td>
+<td>Переключает приближение камеры по заданной кратности. Также изменяет область рендера, что может быть очень полезно.<br><br><strong>Пример:</strong><br><em>zoom 2,3</em></td>
+</tr>
+<tr>
+<td><code>weather</code> &lt;<code>id слота карты</code>&gt; &lt;<code>тип погоды</code>&gt;</td>
+<td>Устанавливает на карте по id слота - ту погоду, что вы укажите в значении типа. При автозаполнении указываются какие имеются типы погоды.<br><br><strong>Пример:</strong><br><em>weather 500 Rain</em></td>
+</tr>
+</tbody>
+</table>
+<p>Команды желательно запомнить наизусть, особенно те, что будут использоваться чаще всего, как загрузка и сохранение карт. Но вы всегда можете заглянуть сюда, чтобы освежить память, потому команды выведены в первую очередь. А вот во вторую очередь пробежимся по управлению.</p>
+<p>В чём существенные отличия команд: <code>savemap</code> и <code>savegrid</code>. Вернёмся к понятиям карты и грида. Карта - это полотно, которое может содержать как один грид, так и несколько гридов, так и вовсе не содержать гридов. А грид, это сетка объектов, на которой располагаются объекты. Чаще всего мы маппим на гридах, но никто не запрещает нам маппить прямо на полотне, например оставить где-то в космосе пасхалку.</p>
+<p>Сохраняя при помощи <code>savemap</code> мы записываем в <code>.yml</code> файл данные о полотне. То что на нём замапленно, как конкретно на полотне расположены гриды, какие данные самого полотна изменены, используется ли на нём пользовательский паралакс и так далее.</p>
+<p>Сохраняя при помощи <code>savegrid</code> мы записываем в <code>.yml</code> файл только данные о конкретном гриде. В таком файле у нас не будет никаких данных о полотне, а будет лишь один единственный грид, без привязки к родителю (полотну).</p>
+<p>Отдельно сохранённые гриды нужны для загрузки на уже существующие карты шаттлов, как пример. Либо для некоторых технически сложных объектов в исполнении кода, которые требуют сохранения гридом, так как загружаются на станции при помощи специального параметра <code>loadgrid</code> у объекта. Например так загружаются шаттл СБ, сразу пристыкованный и шаттлы ЦК. </p>
+<h3 id="_5">Клавиши</h3>
+<table>
+<thead>
+<tr>
+<th>Клавиша</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ё / ~</td>
+<td>Открыть консоль разработчика</td>
+</tr>
+<tr>
+<td>F5</td>
+<td>Открывает панель спавна сущностей (ентити или объектов). Основной инструмент для маппинга</td>
+</tr>
+<tr>
+<td>F6</td>
+<td>Открывает панель спавна тайлов.</td>
+</tr>
+<tr>
+<td>F7</td>
+<td>Открывает общую административную панель, в ней можно найти полезные для себя инструменты и кнопки.</td>
+</tr>
+<tr>
+<td>F8</td>
+<td>Открывает панель спавна декалей.</td>
+</tr>
+<tr>
+<td>B</td>
+<td>Открывает меню песочницы, содержит множество полезных переключателей, освещения, FOV, пола и т.д.</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Копирует объект, на который вы навелись мышкой (не копирует его уникальные свойства, только по прототипу объекта). Рекомендуется к переназначению в настройках на наиболее удобную кнопку для быстрого использования, так как в маппинге копировать придётся часто.</td>
+</tr>
+<tr>
+<td>Нужно задать вручную. Настройка "Изучить сущность"</td>
+<td>Изучить сущность - это открыть VV интерфейс объекта. Если вы ещё мало знаете о том как работать с VV и компонентами, то пока просто назначьте на наиболее удобную вам клавишу, так как в будущем, вам придётся очень часто открывать это меню, а делаю это по бинду, а не через ПКМ - вы сэкономите себе много времени.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">Хоткеи</h3>
+<p>Что же касается о хоткеях во время самого процесса маппинга:</p>
+<table>
+<thead>
+<tr>
+<th>Клавиша / Комбинация</th>
+<th>Пояснение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ЛКМ</td>
+<td>Размещает выбранный вами объект, будь то сущность из F5, тайл из F6 или декаль из F8</td>
+</tr>
+<tr>
+<td>ПКМ</td>
+<td>Отменяет размещение при использовании в F5 и F6 и <strong>удаляет</strong> декаль при использовании в F8</td>
+</tr>
+<tr>
+<td>Ctrl + ЛКМ</td>
+<td>Размещение в сетку. Позволяет множество объектов сразу по сетке. <em>Учитывайте, что использование с тайлами не рекомендуется на момент 09.01.</em> При использовании с тайлами важно начинать тянуть тайлы от уже существующего и <strong>ни в коем случае не от космоса</strong>, иначе вы создадите множество лишних гридов. Не работает с декалями.</td>
+</tr>
+<tr>
+<td>Shift + ЛКМ</td>
+<td>Размещение в линию. Позволяет множество объектов разместить по лини. <em>Учитывайте, что использование с тайлами не рекомендуется на момент 09.01.</em> При использовании с тайлами важно начинать тянуть тайлы от уже существующего и <strong>ни в коем случае не от космоса</strong>, иначе вы создадите множество лишних гридов. Не работает с декалями.</td>
+</tr>
+<tr>
+<td>СКМ</td>
+<td>Изменяет угол объекта. Если объект можно вращать, то на эту кнопку вы как раз и будете его вращать. Работает до размещения в момент проекции, а не после. Не работает с декалями. Не работает с тайлами.</td>
+</tr>
+<tr>
+<td>Ctrl + СКМ</td>
+<td>Отзеркаливает объект, если у него есть соответствующая форма. Наиболее примененимо к газовым фильтрам, смесителям или утилизационным фильтрам, у которых могут быть их зеркальные версии, что замаппить можно, конкретно отразив объект. Работает до размещения в момент проекции, а не после. Не работает с декалями. Не работает с тайлами.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="f5-">F5 - Меню управления</h3>
+<p>В рамках управления, стоит отдельно пройтись по каждому интерфейсу и меню маппинга, которые чаще всего открываются для размещения объектов. Начнём по порядку:</p>
+<h4 id="_7">Панель спавна сущностей</h4>
+<p><img alt="Меню создания" src="../../pictures/mapping/createMenu.png" /></p>
+<p>Само меню из себя представляет список из объектов, которые можно разместить, а также несколько кнопок, которые переключают режимы размещения.</p>
+<ol>
+<li>В первую очередь, это окно поиска предметов. Если вы знаете как называется прототип или объект (ищет по обоим), то вы можете указать сюда нужный вам запрос и найти соответствующий объект.</li>
+<li>Сам список объектов, достаточно нажать на один из, чтобы начать его размещать.</li>
+<li>Режим "Замены" объектами. В основном размещает объекты на карте, но некоторые стены например в этом режиме могут быть заменяемые, например массово заменять обычные стены на укреплённые. Размещать объекты можно и без этого режима, но он включён по умолчанию.</li>
+<li>Режим удаления, переключая на него, вы соответственно начинаете удалять нужные вам объекты при помощи ЛКМ.</li>
+<li>Режим размещения объекта. Есть множество режимов, все они соответствуют их названию и могут быть полезны, когда объекты не закрепляется за тайлом по стандарту и его нужно закрепить. Например для некоторых стульев будет полезным SnapToGrid, а для некоторых кнопок AlignWall.</li>
+<li>Направление света, которое на текущий момент выбрано у размещаемого объекта. Иногда может быть полезным, когда по объекту не видно в какую именно сторону он смотрит, а расположить нужно в конкретную.</li>
+</ol>
+<h4 id="f6-">F6 - Панель размещения тайлов</h4>
+<p><img alt="Меню тайлов" src="../../pictures/mapping/tileMenu.png" /></p>
+<p>В меню размещения тайлов гораздо меньше кнопок, которые можно было бы описать, но всё же:</p>
+<ol>
+<li>Окно поиска нужных тайлов. Наиболее частыми тайлами для поиска обычно являются: Покрытие (ставится под стены и окна) и Космос (для удаления тайлов)</li>
+<li>Список тайлов. При нажатии на один из - выбираете как тайл для размещения.</li>
+<li>Функция удаления тайлов, тоже самое, что и установка тайла Космоса.</li>
+</ol>
+<h4 id="f8-">F8 - Панель размещения декалей</h4>
+<p><img alt="Меню декалей" src="../../pictures/mapping/decalMenu.png" /></p>
+<p>Может показаться довольно затруднительным по началу меню декалей, но постараемся максимально подробно разобрать каждую кнопку в этом меню.</p>
+<ol>
+<li>Привычное нам окно поиска. Декали тяжелее всего искать, но можете подбирать логические слова, чтобы найти нужное: flowers, sand, dust, wood, gray и так далее.</li>
+<li>Соответственно само меню выбора декали. Декаль ставится свободно меж тайлами по нажатию ЛКМ. Стирается по нажатию ПКМ. Стереть конкретно одну декаль нельзя, поэтому при работе на одном тайле комплексно с несколькими декалями - старайтесь быть аккуратны.</li>
+<li>Выбор цветовой модели. Есть RGB и HSV, их различия отражаются в ползунках, которые настраивают конкретный цвет. Использовать RGB рекомендуется в тех случаях, когда вы уже имеете предварительно заданный шаблон RGB. HSV же рекомендуется использовать, когда вы определяете цвет самостоятельно, так как цветовая модель более интуитивно понятная.</li>
+<li>Сами ползунки и настройки цвета. При цветовой модели RGB - R (red) отвечает за красный, G (green) за зелёный и B (blue) за синий. A (alpha) - маска альфа-прозрачности. То есть этот ползунок отвечает за прозрачность декали. Если используется цветовая модель HSV, то H (hue) это тон - им мы задаём нужный цвет, S (saturation) это насыщенность, то есть насколько заданный тон будет блеклым, и V (value) это яркость. То есть сколько белого в заданном тоне. Чтобы освоиться с палитрой, проще всего потратить немного времени, чтобы поиграться с ней.</li>
+<li>Помимо того, что можно выбрать цвет вручную - вы можете воспользоваться уже заготовленными палитрами. Нажав на "Палитра" у вас откроется дополнительное окно с цветами из палитры.</li>
+<li>Соответственно здесь вы выбираете нужный вам цвет, можете ориентироваться на название и сам цвет.</li>
+<li>А здесь уже можете сменить палитру. Зачастую подходящие палитры. это Departmental для классических станция как Frankenstein и Advanced для более продвинутого использования декалей, от этой палитры зачастую настраиваются цвета далее.</li>
+<li>"Использовать автонастройку" автоматически включит нужные параметры или цвет, которые установлены декале по дефолту - использовать нерекомендуется.</li>
+<li>"Свой цвет" - эта настройка определяет, будет ли применяться на декаль цвет, о котором говорилось в пунктах 3-6, если она отключена, будет использоваться стандартный ванильный цвет декали, если включена - то на декаль будет наложен цвет, который вы установили.</li>
+<li>"Привязка к тайлу" - эта настройка определяет, будет ли декаль установлена ровно по центру тайла. Рекомендуется использовать, так как многие декали рассчитаны, что их устанавливают не вручную на край тайл, а ставят в центр, а потому они могут иметь сразу несколько направленностей.</li>
+<li>"Стираемый" - настройка определяет, можно ли игровым путём стереть декаль с тайла. Эта настройка необходима для тех декалей, что теоретически может убрать уборщик при помощи космического очистителя, специального предмета в игре.</li>
+<li>Настройка поворота. Думаю тут всё просто и понятно. Шаг добавления по 90 градусов.</li>
+<li>Настройка слоя или же Глубина. Определяет слой декале. Например на одном пространстве у вас может быть несколько декалей. С помощью глубины вы можете под уже существующую декаль подложить ещё одну. Например сначала вы установили декаль пыли с глубиной 0. А после решили установить туда дополнительно декаль окантовки, тогда вам надо будет установить глубину "-1". <strong>Примечание:</strong> при попытке вписать сначала "-", у вас могут возникнуть трудности, поэтому сначала впишите число, например "1", а после добавьте перед ним знак минуса, чтобы получилось "-1".</li>
+</ol>
+<h4 id="f7-">F7 - Меню администратора</h4>
+<p>Конкретно в этом меню нас интересует лишь вкладка "Объекты" в самом конце списка сверху.
+<img alt="Меню администратора" src="../../pictures/mapping/adminMenu.png" /></p>
+<p>Разберём более подробно, что мы на ней можем делать и наблюдать:</p>
+<ol>
+<li>Кнопка самой вкладки, если ещё не нашли и не перешли в меню</li>
+<li>Переключение типов объектов. Во вкладке объекты, как и в <code>lsmap</code> можно просмотреть список станций, карт или гридов. Эта кнопка как раз переключает сам тип объекта. После переключения обязательно нажмите кнопку "Обновить".</li>
+<li>Это список всех объектов. Список не обновляется динамически, а потому после каждого действия с объектом необходимо нажимать кнопку "Обновить"</li>
+<li>Это действия с объектами из списка. Соответственно "телепортироваться" позволяет вам переместиться к объекту, а "Удалить" - очевидно что. После удаления необходимо обязательно нажать на кнопку "Обновить", чтобы информация была актуальной.</li>
+</ol>
+<h4 id="b-">B - Меню песочницы</h4>
+<p><img alt="Меню песочницы" src="../../pictures/mapping/BMenu.png" /></p>
+<p>Это всё переключатели и кнопки, что могут быть полезны. Проговорим не про все, а про те, что действительно могут использоваться в маппинге.</p>
+<ol>
+<li>Оверлей ИИ - переключает режим отображения ока ИИ. Очень полезный инструмент, когда вы занимаетесь расстановкой камер и голопадов, и вам надо проверить, везде ли ИИ достаёт своим взором или не достаёт ли она до определённого участка, как и задумано.</li>
+<li>Спавн сущностей, это аналог F5, вы можете открывать это окно как вам удобнее.</li>
+<li>Аналогично Спавн тайлов аналог F6</li>
+<li>И спавн декалей аналог F8</li>
+<li>Переключение освещение - очень полезный инструмент для маппинга. Так как мы не маппим в первую очередь электроосвещение, то работаем сначала в этом режиме.</li>
+<li>Переключение FOV'а позволяет посмотреть на пространство так, как на него бы посмотрел игрок. Обязательно отключите освещение (пункт 5), чтобы увидеть взглядом игрока, а не призрака.</li>
+<li>Переключение теней, редкоиспользуемая функция, но может быть полезна для оценки качества освещения комнаты.</li>
+<li>Очень полезная функция переключения пола, показывает как проложены трубы и провода под полом. Чрезвычайно важна в маппинге инфраструктур. Рекомендуется совмещать с <code>nodevis</code> в моментах самопроверок.</li>
+<li>Переключение спавнов - также очень важная функция, что влияет на отображение объектов спавнеров на карте. Предпочтительно всегда держать включённой и выключать, только когда мешает маппить что-то точечное.</li>
+</ol>
+<h2 id="09012025">Режим редактирования карт (не рекомендуется на момент 09.01.2025)</h2>
+<p>В игре присутствует режим редактирования карт, что активируется командой <code>mapping</code> или <code>scene MappingState</code>. Сам режим по себе очень сырой и к использованию не рекомендуется, так по большей части для новичков этот режим лишь сильнее замедляет процесс маппинга и ограничивает в возможностях, а совладает с ним в прежнем темпе лишь уже продвинутый маппер.</p>
+<p>Разберём что он из себя представляет также как с интерфейсами:</p>
+<p><img alt="Редактор карт" src="../../pictures/mapping/mappingState1.png" /></p>
+<ol>
+<li>Сущности - это аналог F5, содержит довольно много объектов, порой даже те, которых и нет в F5 вовсе. По сути также ищется всё через строку поиска выше, но так как строка поиска объединена - может быть неудобным. Панель Ентити сделана под категоризацию, но к сожалению, сама категоризация оставляет желать лучшего.</li>
+<li>Плитки - это аналог F6. В принципе всё тоже самое, что и в меню тайлов, только просматривать некоторые иконки труднее из-за предоставленного интерфейса.</li>
+<li>Декали - Аналог F8, по ним пройдёмся дополнительно чуть ниже. Так как выбор меню раскрывает дополнительное окно декалей, в котором присутствует свой геморой, разберём его отдельно. А так, визуально не отличается от F8.</li>
+<li>Инструмент пипетки. Аналог горячей клавиши "Копировать" из меню настроек, только дополнительно раскрывает категорию в меню сущностей из первого пункта. Чуть более удобная реализация Копирования, но всё также не копирует прототип сущности, из-за чего преимущества быстро кончаются.</li>
+<li>Знакомая всем стиралка. То же что и Erase entity, за исключением того, что конкретно показывает, какая сущность выбрана курсором. Продвинутый маппер все раскрытые гермозатворы закрытыми глазами прокликает и без подобного инструмента, но бесспорно полезно, жаль что пока приходится проходить мимо.</li>
+<li>Перемещение бокового меню слева - в правую часть экрана и обратно.</li>
+<li>Довольно стандартный функционал, который встречался как в F5, так и в F8. Дополнительных удобств фукнционал не предоставляет.</li>
+</ol>
+<p>Не упомянул о кнопке выхода из редактора. Она не работает, упоминать нечего.</p>
+<p>Собственно, что там о декалях?</p>
+<p><img alt="Редактор карт" src="../../pictures/mapping/mappingState2.png" /></p>
+<p>В меню как вы можете заметить - перенесли настройки декалей, цвета и так далее. Но, к сожалению, забыли один важный и постоянно использующийся пункт. Чекбокс "Свой цвет".
+Что это означает? Может показаться, что чтобы сбрасываться на ванильный цвет, надо выставлять значения белого - но нет. Чтобы выбрать ванильный цвет декали - надо выбрать саму декаль. Из-за этого, каждый раз изменяя выбор декали - мы сбрасываем цвет. Чтобы цвет декали снова появился, надо хоть как-то повзаимодействовать с палитрой. От того, это настолько неудобная и неприменимая в реальности панель декалей, что не просто не рекомендуется, а скорее даже восприщается.</p>
+<p>Вся информация по редактору карт актуальна на момент 11.01.2025.
+Если прошло значительно времени с этой даты, стоит естественно проверить, не поправилась ли ситуация с ним.</p>
+<p>Более об инструментах рассказывать нечего.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Последнее обновление">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="21 сентября 2025 г. 05:26:10 UTC">21 сентября 2025 г.</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Дата создания">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="21 сентября 2025 г. 05:26:10 UTC">21 сентября 2025 г.</span>
+  </span>
+
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Участники">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:elyasin.ane@mail.ru">Anri</a>
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
+        
+          
+          <a href="../general/" class="md-footer__link md-footer__link--prev" aria-label="Назад: С чего начать. Основы.">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              <div class="md-ellipsis">
+                С чего начать. Основы.
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../starting/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Первые труды">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Вперед
+              </span>
+              <div class="md-ellipsis">
+                Первые труды
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 SS220. Written and maintained by SS220 developers.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/ss220" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.footer", "navigation.sections"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

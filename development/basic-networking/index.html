@@ -1,0 +1,2324 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../localization/">
+      
+      
+        <link rel="next" href="../ss220-guidelines/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.20">
+    
+    
+      
+        <title>Базовый неткод в Robust Toolbox - SS220 Developer Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e53b48f4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#robust-toolbox" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../.." title="SS220 Developer Documentation" class="md-header__button md-logo" aria-label="SS220 Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SS220 Developer Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Базовый неткод в Robust Toolbox
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Поделиться" aria-label="Поделиться" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SerbiaStrong-220/space-station-14" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SerbiaStrong-220/space-station-14
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="SS220 Developer Documentation" class="md-nav__button md-logo" aria-label="SS220 Developer Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    SS220 Developer Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SerbiaStrong-220/space-station-14" title="Перейти к репозиторию" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SerbiaStrong-220/space-station-14
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Главная
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../localhost/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Сборка и запуск локального сервера
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Диздоки
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Диздоки
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Исследователи с Сиерры(Infinity)
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Исследователи с Сиерры(Infinity)
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../disdocs/sierra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Описание идеи
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../disdocs/sierra/backstory-gen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Генерация бэкстори
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../disdocs/sierra/planet-gen/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Диздок генератора планеты для экспедиции
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Маппинг
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Маппинг
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Обучение
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            Обучение
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/general/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    С чего начать. Основы.
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/controls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Управление и термины
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/starting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Первые труды
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_4" id="__nav_4_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Полезные статьи
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            Полезные статьи
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Полезные советы и FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Тестирование карты
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/render/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как сделать рендер карты
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/vv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как работать с View Variables (VV)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/decalling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как научиться красиво декалить?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/atmos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как прокладывать атмосферику
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/engineering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как прокладывать электропитание
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/parallaxes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как создать и установить свой параллакс
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/dangeouns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Как создать свой процедурный данж
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1_5" id="__nav_4_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Моя первая станция
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Моя первая станция
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mapping/1station/loremispum/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    О разделе
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Спрайтинг
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Спрайтинг
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/style/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Визуальный стиль
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Базовая теория
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Базовая теория
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Глава 0. Введение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/lineart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Глава 1. Линии
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/anti-aliased/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Глава 2. Сглаживание
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/color/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Глава 3. Цвет
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/shading/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Глава 4. Свет и тень
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/axonometry/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Глава 5. Аксонометрия
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Программное обеспечение
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Практика
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Практика
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/firstsprite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Твой первый спрайт
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spriting/rsi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Работа с RSI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Разработка
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Разработка
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Обучение
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            Обучение
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dev-introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Введение в разработку
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../creating-simple-system/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Создание простейшей системы с компонентом
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ecs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ECS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../prototypes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Прототипы
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../localization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Локализация
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Базовый неткод в Robust Toolbox
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Базовый неткод в Robust Toolbox
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#robust-toolbox_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сетевая структура Robust Toolbox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prediction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сетевое состояние компонентов
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сетевые ивенты
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Сетевые ивенты">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Отправка с клиента на сервер
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Обработка на клиенте
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ss220-guidelines/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Наставления по работе с репозиторием SS220
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-development/introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Продвинутая разработка
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Advanced
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced-development/performance-troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Локализация проблем производительности
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#robust-toolbox_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сетевая структура Robust Toolbox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#prediction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Prediction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сетевое состояние компонентов
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Сетевые ивенты
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Сетевые ивенты">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Отправка с клиента на сервер
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Обработка на клиенте
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="robust-toolbox">Базовый неткод в Robust Toolbox</h1>
+<p>Как мы знаем, SS14 - мультиплеерная игра. Соответственно, информация должна синхронизироваться между сервером и клиентами.</p>
+<h2 id="robust-toolbox_1">Сетевая структура Robust Toolbox</h2>
+<p>Весь код игры делиться на три структуры: <strong><em>Server, Client и Shared</em></strong>.</p>
+<figure>
+<p><img alt="Haron" src="../../pictures/netcode-organization.png" />
+  </p>
+<figcaption>Организация сетевого кода</figcaption>
+</figure>
+<p>Соответственно:</p>
+<ul>
+<li>Код, находящийся в <code>Content.Server</code>, обрабатывается <strong><em>только</em></strong> сервером;</li>
+<li>Код, находящийся в <code>Content.Client</code>, обрабатывается <strong><em>только</em></strong> клиентом;</li>
+<li>Код, находящийся в <code>Content.Shared</code>, обрабатывается <strong><em>обоими</em></strong> сторонами (prediction, о нём позже).</li>
+</ul>
+<p>Помещая тот или иной класс в какой-то из этих папок он становится частью той стороны.<br />
+Так становится понятно, что, например, расчёты урона <strong>не должны</strong> быть на клиенте, как и код, связанный с интерфейсом, не должен находится на сервере.</p>
+<p>На клиенте можно распологать: код UI, код визуала (шейдеры, спрайты, эффекты) и т.д.<br />
+На сервере можно распологать: расчеты урона, механики, взаимодействия, работу с БД и т.д.</p>
+<p>Но существует и <code>Content.Shared</code>.</p>
+<h2 id="prediction">Prediction</h2>
+<p>Prediction (дословно - предсказание, предугадывание) - это методика разработки неткода в мультиплеерных играх. Она заключается в том, что при отправке запроса клиентом он, не дожидаясь сервера, производит вычисления локально и создаёт иллюзию игры без задержки.</p>
+<p>Однако, когда вычисления после отправки клиентом запроса на сервер дойдут обратно на клиент, происходит сравнение: насколько правильно клиент "предсказал" результат обработки инпутов. Если разница нулевая или практически незначимая, то всё остаётся как есть. Но если разница становится существенной, то игрока насильно возвращает к тому состоянию, которое просчитал сервер.<br />
+Если был выполнен инпут на передвижение, то при неправильных расчетах клиентом игрока откинет к тому месту, где он должен быть по расчету сервера.</p>
+<p>Код, помещаемый в <code>Content.Shared</code>, становится <strong>предугадываемым</strong>, т. е. работает механизм prediction'а. Доступ к данному коду может быть получен как с клиента, так и с сервера, однако классы из <code>Content.Shared</code> не могут получить доступ к классам с клиента или с сервера. Данный концепт изображён на схеме выше.</p>
+<h2 id="_1">Сетевое состояние компонентов</h2>
+<p>Как мы установили выше, код нахоядщийся в соответствующем пространстве имён будет обрабатываться на соответствующей стороне, т. е. и компонент, находящийся в <code>Content.Server</code>, будет обрабатываться и виден только на сервере, а если он находится в <code>Content.Shared</code> - то на обеих сторонах. </p>
+<p>Рассмотрим компонент:
+<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="nn">Robust.Shared.GameStates</span><span class="p">;</span>
+
+<span class="k">namespace</span><span class="w"> </span><span class="nn">Content.Shared.Foldable</span><span class="p">;</span>
+
+<span class="c1">/// &lt;summary&gt;</span>
+<span class="c1">/// Used to create &quot;foldable structures&quot; that you can pickup like an item when folded.</span>
+<span class="c1">/// &lt;/summary&gt;</span>
+<span class="c1">/// &lt;remarks&gt;</span>
+<span class="c1">/// Will prevent any insertions into containers while this item is unfolded.</span>
+<span class="c1">/// &lt;/remarks&gt;</span>
+<span class="na">[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(true)]</span>
+<span class="na">[Access(typeof(FoldableSystem))]</span>
+<span class="k">public</span><span class="w"> </span><span class="k">sealed</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">FoldableComponent</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Component</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="na">[DataField(&quot;folded&quot;), AutoNetworkedField]</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">IsFolded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
+
+<span class="w">    </span><span class="na">[DataField]</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">CanFoldInsideContainer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
+
+<span class="w">    </span><span class="na">[DataField]</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">LocId</span><span class="w"> </span><span class="n">UnfoldVerbText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;unfold-verb&quot;</span><span class="p">;</span>
+
+<span class="w">    </span><span class="na">[DataField]</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">LocId</span><span class="w"> </span><span class="n">FoldVerbText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;fold-verb&quot;</span><span class="p">;</span>
+
+<span class="w">    </span><span class="c1">//SS220-fold-doafter begin</span>
+<span class="w">    </span><span class="c1">/// &lt;summary&gt;</span>
+<span class="w">    </span><span class="c1">/// Time needed to fold/unfold an item. Raises DoAfter if only this value is not null.</span>
+<span class="w">    </span><span class="c1">/// &lt;/summary&gt;</span>
+<span class="w">    </span><span class="na">[DataField]</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="n">TimeSpan</span><span class="o">?</span><span class="w"> </span><span class="n">FoldTime</span><span class="p">;</span>
+<span class="w">    </span><span class="c1">//SS220-fold-doafter end</span>
+<span class="p">}</span>
+</code></pre></div>
+Данный компонент находится в пространстве имён <code>Content.Shared</code> и, соответственно, на него работает prediction. В данный момент нас интересует то, как поля в компонентах синхронизируются между сервером и клиентом. Рассмотрим атрибуты компонента:
+<div class="highlight"><pre><span></span><code><span class="na">[RegisterComponent, NetworkedComponent, AutoGenerateComponentState(true)]</span>
+<span class="na">[Access(typeof(FoldableSystem))]</span>
+<span class="k">public</span><span class="w"> </span><span class="k">sealed</span><span class="w"> </span><span class="k">partial</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">FoldableComponent</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">Component</span>
+</code></pre></div>
+Заметим тут <code>NetworkedComponent</code> и <code>AutoGenerateComponentState</code>.<br />
+<code>NetworkedComponent</code> помечает то, что данный компонент должен участвовать в синхронизации данных между сервером и клиентом.<br />
+<code>AutoGenerateComponentState</code> помечает то, что поля данного компонента должны синхронизироваться автоматически. В данном случае речь идёт о написании ComponentState методов синхронизации на клиенте и сервере.</p>
+<p>Возьмем в пример <code>AmbientSoundComponent</code>:
+<div class="highlight"><pre><span></span><code><span class="c1">// Данный класс написан в файле с самим компонентом, т. е. в AmbientSoundComponent.cs</span>
+<span class="na">[Serializable, NetSerializable]</span>
+<span class="k">public</span><span class="w"> </span><span class="k">sealed</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">AmbientSoundComponentState</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">ComponentState</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">Enabled</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">init</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">Range</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">init</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="k">public</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">Volume</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="k">init</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+Как можно увидеть, здесь просто пишутся те поля, которые должны быть переданы через сеть (синхронизироваться).</p>
+<p>Далее, необходимо написать два метода: один на отправку ComponentState, а другой - на его обработку:
+<div class="highlight"><pre><span></span><code><span class="c1">/// SharedAmbientSoundSystem.cs</span>
+<span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Initialize</span><span class="p">()</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">base</span><span class="p">.</span><span class="n">Initialize</span><span class="p">();</span>
+<span class="w">    </span><span class="n">SubscribeLocalEvent</span><span class="o">&lt;</span><span class="n">AmbientSoundComponent</span><span class="p">,</span><span class="w"> </span><span class="n">ComponentGetState</span><span class="o">&gt;</span><span class="p">(</span><span class="n">GetCompState</span><span class="p">);</span>
+<span class="w">    </span><span class="n">SubscribeLocalEvent</span><span class="o">&lt;</span><span class="n">AmbientSoundComponent</span><span class="p">,</span><span class="w"> </span><span class="n">ComponentHandleState</span><span class="o">&gt;</span><span class="p">(</span><span class="n">HandleCompState</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="p">...</span>
+
+<span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">GetCompState</span><span class="p">(</span><span class="n">Entity</span><span class="o">&lt;</span><span class="n">AmbientSoundComponent</span><span class="o">&gt;</span><span class="w"> </span><span class="n">ent</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ComponentGetState</span><span class="w"> </span><span class="n">args</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="n">args</span><span class="p">.</span><span class="n">State</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">AmbientSoundComponentState</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">        </span><span class="n">Enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ent</span><span class="p">.</span><span class="n">Comp</span><span class="p">.</span><span class="n">Enabled</span><span class="p">,</span>
+<span class="w">        </span><span class="n">Range</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ent</span><span class="p">.</span><span class="n">Comp</span><span class="p">.</span><span class="n">Range</span><span class="p">,</span>
+<span class="w">        </span><span class="n">Volume</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ent</span><span class="p">.</span><span class="n">Comp</span><span class="p">.</span><span class="n">Volume</span><span class="p">,</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="p">}</span>
+</code></pre></div>
+В <code>GetCompState()</code> мы обрабатываем ивент <code>ComponentGetState</code>. Тут мы создаём новый экземпляр класса, который мы объявили ранее (<code>AmbientSoundComponentState</code>). Ивент <code>ComponentGetState</code> отвечает за формирование отправляемых для синхронизации данных.<br />
+Как видно, здесь просто происходит передача данных полям через конструктор класса. Главное, передать созданный экземпляр в <code>args.State</code>, т. е. в аргументы обрабатываемого ивента.
+<div class="highlight"><pre><span></span><code><span class="c1">/// SharedAmbientSoundSystem.cs</span>
+<span class="p">...</span>
+
+<span class="k">private</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">HandleCompState</span><span class="p">(</span><span class="n">Entity</span><span class="o">&lt;</span><span class="n">AmbientSoundComponent</span><span class="o">&gt;</span><span class="w"> </span><span class="n">ent</span><span class="p">,</span><span class="w"> </span><span class="k">ref</span><span class="w"> </span><span class="n">ComponentHandleState</span><span class="w"> </span><span class="n">args</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">args</span><span class="p">.</span><span class="n">Current</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="n">AmbientSoundComponentState</span><span class="w"> </span><span class="n">state</span><span class="p">)</span>
+<span class="w">        </span><span class="k">return</span><span class="p">;</span>
+
+<span class="w">    </span><span class="n">ent</span><span class="p">.</span><span class="n">Comp</span><span class="p">.</span><span class="n">Enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">state</span><span class="p">.</span><span class="n">Enabled</span><span class="p">;</span>
+<span class="w">    </span><span class="n">ent</span><span class="p">.</span><span class="n">Comp</span><span class="p">.</span><span class="n">Range</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">state</span><span class="p">.</span><span class="n">Range</span><span class="p">;</span>
+<span class="w">    </span><span class="n">ent</span><span class="p">.</span><span class="n">Comp</span><span class="p">.</span><span class="n">Volume</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">state</span><span class="p">.</span><span class="n">Volume</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+Здесь происходит обработка ивента <code>ComponentHandleState</code>, который отвечает за обработку отправленной для синхронизации информации. По сути, тут мы наоборот, приравниваем значения компонента к значениям аргумента ивента.</p>
+<p>Как можно было заметить, оба метода написаны в одной системы в <code>SharedAmbientSystenm.cs</code>, т. е. в <code>Content.Shared</code>. Однако:</p>
+<ul>
+<li><code>ComponentGetState</code> обрабатывается <strong><em>только сервером</em></strong>;</li>
+<li><code>ComponentHandleState</code> обрабатывается <strong><em>только клиентом</em></strong>.</li>
+</ul>
+<p>Данные правила истинны и в случае, когда оба метода (или один из них) находятся и в <code>Content.Shared</code>, как в примере выше.</p>
+<p>Но написание данных ивентов нужно в том случае, если логика вашего компонента или системы нуждается в дополнительных действиях при синхронизации между сервером/клиентом.</p>
+<p>Вернёмся к примеру с <code>FoldableComponent</code>: здесь нужна простая синхронизация некоторых полей, а для этого существует выше упомянутый атрибут <code>AutoGenerateComponentState</code>, поэтому для большинста случаев писать выше написанный код не придётся в принципе.<br />
+Единственное, что нужно будет сделать, это пометить необходимые для синхрониазации поля при помощи <code>AutoNetworkedField</code>:
+<div class="highlight"><pre><span></span><code><span class="na">[DataField(&quot;folded&quot;), AutoNetworkedField]</span>
+<span class="k">public</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">IsFolded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">false</span><span class="p">;</span>
+</code></pre></div>
+Так, автогенерация кода сделает все вещи, связанные с ComponentState, за вас.</p>
+<p>Теперь, допустим, мы в каком-то методе меняем <code>IsFolded</code>, и нам необходимо вызвать синхронизацию. Это возможно сделать при помощи метода <code>Dirty()</code>:
+<div class="highlight"><pre><span></span><code><span class="p">...</span>
+<span class="n">ent</span><span class="p">.</span><span class="n">Comp</span><span class="p">.</span><span class="n">IsFolded</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">;</span>
+<span class="n">Dirty</span><span class="p">(</span><span class="n">ent</span><span class="p">);</span>
+<span class="c1">// Альтернативный вид - Dirty(uid, component), </span>
+<span class="c1">// если имеется EntityUid и сам компонент отдельно</span>
+</code></pre></div>
+После этого, энтити с компонентом будет помечено как "грязное", и при первой же возможности движок выполнит его синхронизацию.</p>
+<h2 id="_2">Сетевые ивенты</h2>
+<p>Помимо локальных ивентов в Robust Toolbox  существуют и сетевые ивенты. Они, в отличии от ComponentState, могут быть отправлены/обработаны как с сервера, так и с клиента (обработать один и тот же сетевой ивент можно одновременно и с клиента, и с сервера).<br />
+Они используют эквивалентные обычным методам <code>RaiseNetworkEvent</code> и <code>SubscribeNetworkEvent</code>.</p>
+<div class="admonition note">
+<p>Пример ниже взят из официальной докуменатации Space Wizards.</p>
+</div>
+<p>Очевидным примером реализации сетевых ивентов является система АХелпов. Для начала, нужно создать сам ивент:
+<div class="highlight"><pre><span></span><code><span class="c1">/// SharedBwoinkSystem.cs</span>
+
+<span class="w">        </span><span class="na">[Serializable, NetSerializable]</span>
+<span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">sealed</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">BwoinkTextMessage</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">EntityEventArgs</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">public</span><span class="w"> </span><span class="n">DateTime</span><span class="w"> </span><span class="n">SentAt</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">            </span><span class="k">public</span><span class="w"> </span><span class="n">NetUserId</span><span class="w"> </span><span class="n">ChannelId</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">            </span><span class="k">public</span><span class="w"> </span><span class="n">NetUserId</span><span class="w"> </span><span class="n">TrueSender</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">            </span><span class="k">public</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">Text</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">get</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+
+<span class="w">            </span><span class="k">public</span><span class="w"> </span><span class="nf">BwoinkTextMessage</span><span class="p">(</span><span class="n">NetUserId</span><span class="w"> </span><span class="n">channelId</span><span class="p">,</span><span class="w"> </span><span class="n">NetUserId</span><span class="w"> </span><span class="n">trueSender</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="p">,</span><span class="w"> </span><span class="n">DateTime</span><span class="o">?</span><span class="w"> </span><span class="n">sentAt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">default</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="n">SentAt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sentAt</span><span class="w"> </span><span class="o">??</span><span class="w"> </span><span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">;</span>
+<span class="w">                </span><span class="n">ChannelId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">channelId</span><span class="p">;</span>
+<span class="w">                </span><span class="n">TrueSender</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">trueSender</span><span class="p">;</span>
+<span class="w">                </span><span class="n">Text</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">text</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+</code></pre></div>
+Единственное главное его отличие от обычных ивентов - атрибут <code>NetSerializable</code>.</p>
+<h3 id="_3">Отправка с клиента на сервер</h3>
+<p>Отправка сетевеого ивента производится простым образом:
+<div class="highlight"><pre><span></span><code><span class="c1">/// Content.Client ... BwoinkSystem.cs</span>
+<span class="p">...</span>
+<span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Send</span><span class="p">(</span><span class="n">NetUserId</span><span class="w"> </span><span class="n">channelId</span><span class="p">,</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="n">text</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="n">RaiseNetworkEvent</span><span class="p">(</span><span class="k">new</span><span class="w"> </span><span class="n">BwoinkTextMessage</span><span class="p">(</span><span class="n">channelId</span><span class="p">,</span><span class="w"> </span><span class="n">channelId</span><span class="p">,</span><span class="w"> </span><span class="n">text</span><span class="p">));</span>
+<span class="w">        </span><span class="p">}</span>
+</code></pre></div>
+Обработка данного ивента на сервере выглядит так:
+<div class="highlight"><pre><span></span><code><span class="c1">/// Content.Server ... BwoinkSystem.cs</span>
+
+<span class="w">        </span><span class="c1">// ok this is technically in shared and overriden on server/client but you get the idea for simplicity..</span>
+<span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Initialize</span><span class="p">()</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">base</span><span class="p">.</span><span class="n">Initialize</span><span class="p">();</span>
+
+<span class="w">            </span><span class="n">SubscribeNetworkEvent</span><span class="o">&lt;</span><span class="n">BwoinkTextMessage</span><span class="o">&gt;</span><span class="p">(</span><span class="n">OnBwoinkTextMessage</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="p">...</span>
+
+<span class="w">        </span><span class="k">protected</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnBwoinkTextMessage</span><span class="p">(</span><span class="n">BwoinkTextMessage</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="n">EntitySessionEventArgs</span><span class="w"> </span><span class="n">eventArgs</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">base</span><span class="p">.</span><span class="n">OnBwoinkTextMessage</span><span class="p">(</span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="n">eventArgs</span><span class="p">);</span>
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">senderSession</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">IPlayerSession</span><span class="p">)</span><span class="w"> </span><span class="n">eventArgs</span><span class="p">.</span><span class="n">SenderSession</span><span class="p">;</span>
+
+<span class="w">            </span><span class="c1">// TODO: Sanitize text?</span>
+<span class="w">            </span><span class="c1">// Confirm that this person is actually allowed to send a message here.</span>
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">personalChannel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">senderSession</span><span class="p">.</span><span class="n">UserId</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">message</span><span class="p">.</span><span class="n">ChannelId</span><span class="p">;</span>
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">senderAdmin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_adminManager</span><span class="p">.</span><span class="n">GetAdminData</span><span class="p">(</span><span class="n">senderSession</span><span class="p">);</span>
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">authorized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">personalChannel</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">senderAdmin</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="k">null</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">authorized</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="c1">// Unauthorized bwoink (log?)</span>
+<span class="w">                </span><span class="k">return</span><span class="p">;</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">escapedText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">FormattedMessage</span><span class="p">.</span><span class="n">EscapeText</span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="n">Text</span><span class="p">);</span>
+
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">bwoinkText</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">...</span>
+
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">BwoinkTextMessage</span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="n">ChannelId</span><span class="p">,</span><span class="w"> </span><span class="n">senderSession</span><span class="p">.</span><span class="n">UserId</span><span class="p">,</span><span class="w"> </span><span class="n">bwoinkText</span><span class="p">);</span>
+
+<span class="w">            </span><span class="p">...</span>
+
+<span class="w">            </span><span class="c1">// Admins</span>
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">targets</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_adminManager</span><span class="p">.</span><span class="n">ActiveAdmins</span><span class="p">.</span><span class="n">Select</span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="o">=&gt;</span><span class="w"> </span><span class="n">p</span><span class="p">.</span><span class="n">ConnectedClient</span><span class="p">).</span><span class="n">ToList</span><span class="p">();</span>
+
+<span class="w">            </span><span class="c1">// And involved player</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">_playerManager</span><span class="p">.</span><span class="n">TryGetSessionById</span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="n">ChannelId</span><span class="p">,</span><span class="w"> </span><span class="k">out</span><span class="w"> </span><span class="kt">var</span><span class="w"> </span><span class="n">session</span><span class="p">))</span>
+<span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">targets</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">ConnectedClient</span><span class="p">))</span>
+<span class="w">                    </span><span class="n">targets</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">ConnectedClient</span><span class="p">);</span>
+
+<span class="w">            </span><span class="k">foreach</span><span class="w"> </span><span class="p">(</span><span class="kt">var</span><span class="w"> </span><span class="n">channel</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">targets</span><span class="p">)</span>
+<span class="w">                </span><span class="n">RaiseNetworkEvent</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span><span class="w"> </span><span class="n">channel</span><span class="p">);</span>
+
+<span class="w">            </span><span class="p">...</span>
+</code></pre></div>
+Стоит заметить, что сам обработчик состоит лишь из двух аргументов - самого ивента и сессии в данном контексте. Соответственно, данный ивент не зависят от каких-либо энтити.<br />
+Первые строчки обработчика проверяют, может ли вообще данный клиент отправить это сообщение. <strong><em>При обработке ивентов с клиента их всегда нужно верифицировать!</em></strong><br />
+Затем, обработчик формиурет новый ивент и рассылает его всем целям (в данном случае - админам).</p>
+<h3 id="_4">Обработка на клиенте</h3>
+<p>Рассмотрим, как обработает ивент с сервера клиент:
+<div class="highlight"><pre><span></span><code><span class="c1">/// Content.Client ... BwoinkSystem.cs</span>
+<span class="w">        </span><span class="c1">// ok this is technically in shared and overriden on server/client but you get the idea for simplicity..</span>
+<span class="w">        </span><span class="k">public</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Initialize</span><span class="p">()</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">base</span><span class="p">.</span><span class="n">Initialize</span><span class="p">();</span>
+
+<span class="w">            </span><span class="n">SubscribeNetworkEvent</span><span class="o">&lt;</span><span class="n">BwoinkTextMessage</span><span class="o">&gt;</span><span class="p">(</span><span class="n">OnBwoinkTextMessage</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+
+<span class="w">        </span><span class="p">...</span>
+
+<span class="w">        </span><span class="k">protected</span><span class="w"> </span><span class="k">override</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">OnBwoinkTextMessage</span><span class="p">(</span><span class="n">BwoinkTextMessage</span><span class="w"> </span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="n">EntitySessionEventArgs</span><span class="w"> </span><span class="n">eventArgs</span><span class="p">)</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="k">base</span><span class="p">.</span><span class="n">OnBwoinkTextMessage</span><span class="p">(</span><span class="n">message</span><span class="p">,</span><span class="w"> </span><span class="n">eventArgs</span><span class="p">);</span>
+<span class="w">            </span><span class="n">LogBwoink</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+<span class="w">            </span><span class="c1">// Actual line</span>
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">window</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">EnsurePanel</span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="n">ChannelId</span><span class="p">);</span>
+<span class="w">            </span><span class="n">window</span><span class="p">.</span><span class="n">ReceiveLine</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+<span class="w">            </span><span class="c1">// Play a sound if we didn&#39;t send it</span>
+<span class="w">            </span><span class="kt">var</span><span class="w"> </span><span class="n">localPlayer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">_playerManager</span><span class="p">.</span><span class="n">LocalPlayer</span><span class="p">;</span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">localPlayer</span><span class="o">?.</span><span class="n">UserId</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">message</span><span class="p">.</span><span class="n">TrueSender</span><span class="p">)</span>
+<span class="w">            </span><span class="p">{</span>
+<span class="w">                </span><span class="n">SoundSystem</span><span class="p">.</span><span class="n">Play</span><span class="p">(</span><span class="n">Filter</span><span class="p">.</span><span class="n">Local</span><span class="p">(),</span><span class="w"> </span><span class="s">&quot;/Audio/Effects/adminhelp.ogg&quot;</span><span class="p">);</span>
+<span class="w">                </span><span class="n">_clyde</span><span class="p">.</span><span class="n">RequestWindowAttention</span><span class="p">();</span>
+<span class="w">            </span><span class="p">}</span>
+
+<span class="w">            </span><span class="n">_adminWindow</span><span class="o">?.</span><span class="n">OnBwoink</span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="n">ChannelId</span><span class="p">);</span>
+<span class="w">        </span><span class="p">}</span>
+</code></pre></div>
+Тут всё довольно просто: мы открываем окно АХелпа, показываем сообщение и проигрываем звук при необходимости. В отличие обработки на сервере, тут мы не верифицируем (проверяем) присланный ивент, так как мы доверяем серверу.</p>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Последнее обновление">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="21 сентября 2025 г. 05:26:10 UTC">21 сентября 2025 г.</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Дата создания">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="21 сентября 2025 г. 05:26:10 UTC">21 сентября 2025 г.</span>
+  </span>
+
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Участники">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:elyasin.ane@mail.ru">Anri</a>
+    </nav>
+  </span>
+
+    
+    
+  </aside>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Нижний колонтитул" >
+        
+          
+          <a href="../localization/" class="md-footer__link md-footer__link--prev" aria-label="Назад: Локализация">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Назад
+              </span>
+              <div class="md-ellipsis">
+                Локализация
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../ss220-guidelines/" class="md-footer__link md-footer__link--next" aria-label="Вперед: Наставления по работе с репозиторием SS220">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Вперед
+              </span>
+              <div class="md-ellipsis">
+                Наставления по работе с репозиторием SS220
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 SS220. Written and maintained by SS220 developers.
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://discord.gg/ss220" target="_blank" rel="noopener" title="discord.gg" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M492.5 69.8c-.2-.3-.4-.6-.8-.7-38.1-17.5-78.4-30-119.7-37.1-.4-.1-.8 0-1.1.1s-.6.4-.8.8c-5.5 9.9-10.5 20.2-14.9 30.6-44.6-6.8-89.9-6.8-134.4 0-4.5-10.5-9.5-20.7-15.1-30.6-.2-.3-.5-.6-.8-.8s-.7-.2-1.1-.2C162.5 39 122.2 51.5 84.1 69c-.3.1-.6.4-.8.7C7.1 183.5-13.8 294.6-3.6 404.2c0 .3.1.5.2.8s.3.4.5.6c44.4 32.9 94 58 146.8 74.2.4.1.8.1 1.1 0s.7-.4.9-.7c11.3-15.4 21.4-31.8 30-48.8.1-.2.2-.5.2-.8s0-.5-.1-.8-.2-.5-.4-.6-.4-.3-.7-.4c-15.8-6.1-31.2-13.4-45.9-21.9-.3-.2-.5-.4-.7-.6s-.3-.6-.3-.9 0-.6.2-.9.3-.5.6-.7c3.1-2.3 6.2-4.7 9.1-7.1.3-.2.6-.4.9-.4s.7 0 1 .1c96.2 43.9 200.4 43.9 295.5 0 .3-.1.7-.2 1-.2s.7.2.9.4c2.9 2.4 6 4.9 9.1 7.2.2.2.4.4.6.7s.2.6.2.9-.1.6-.3.9-.4.5-.6.6c-14.7 8.6-30 15.9-45.9 21.8-.2.1-.5.2-.7.4s-.3.4-.4.7-.1.5-.1.8.1.5.2.8c8.8 17 18.8 33.3 30 48.8.2.3.6.6.9.7s.8.1 1.1 0c52.9-16.2 102.6-41.3 147.1-74.2.2-.2.4-.4.5-.6s.2-.5.2-.8c12.3-126.8-20.5-236.9-86.9-334.5zm-302 267.7c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.4 59.2-52.8 59.2m195.4 0c-29 0-52.8-26.6-52.8-59.2s23.4-59.2 52.8-59.2c29.7 0 53.3 26.8 52.8 59.2 0 32.7-23.2 59.2-52.8 59.2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "search.share", "navigation.footer", "navigation.sections"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
