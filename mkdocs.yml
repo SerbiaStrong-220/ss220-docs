@@ -1,7 +1,7 @@
 site_name: SS220 Developer Documentation
 repo_url: https://github.com/SerbiaStrong-220/space-station-14
 repo_name: SerbiaStrong-220/space-station-14
-copyright: Copyright &copy; 2023 SS220. Written and maintained by SS220 developers.
+copyright: Copyright &copy; 2023-2026 SS220. Written and maintained by SS220 developers.
 
 theme:
     name: material
@@ -18,6 +18,7 @@ theme:
             name: Switch to dark mode
 
     features:
+    - content.code.copy
     - search.suggest
     - search.highlight
     - search.share
@@ -119,16 +120,15 @@ nav:
     - Практика:
       - spriting/firstsprite.md 
       - spriting/rsi.md
-    #- spriting/terminology.md
 
   - Разработка:
     - Обучение:
       - development/dev-introduction.md
-      - development/creating-simple-system.md
       - development/ecs.md
       - development/prototypes.md
       - development/localization.md
       - development/basic-networking.md
+      - development/creating-simple-system.md
     - development/ss220-guidelines.md
     - advanced-development/introduction.md 
     - Advanced:
