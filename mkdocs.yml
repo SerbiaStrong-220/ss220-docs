@@ -1,39 +1,61 @@
 site_name: SS220 Developer Documentation
 repo_url: https://github.com/SerbiaStrong-220/space-station-14
-repo_name: SerbiaStrong-220/space-station-14
-copyright: Copyright &copy; 2023 SS220. Written and maintained by SS220 developers.
+repo_name: Space Station 14
+site_description: Документация и база знаний проекта SS220. Настроено для разработчиков и исследователей
+site_author: 'SS220 DevTeam'
+copyright: Copyright &copy; 2026 SS220. Written and maintained by SS220 developers.
 
 theme:
     name: material
     language: ru
+    font: false
     palette:
-        # Palette toggle for dark mode
         - scheme: slate
           toggle:
             icon: material/brightness-4
             name: Switch to light mode
         - scheme: default
           toggle:
-            icon: material/brightness-7 
+            icon: material/brightness-7
             name: Switch to dark mode
-
     features:
-    - search.suggest
-    - search.highlight
-    - search.share
-    - navigation.footer
-    - navigation.sections
+        - search.suggest
+        - search.highlight
+        - search.share
+        - navigation.footer
+        - navigation.sections
+        - navigation.instant
+        - navigation.tracking
+        - navigation.top
+        - content.code.copy
+
+extra_css:
+    - stylesheets/extra.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js
+  - javascripts/particles-init.js
+  - javascripts/reading-progress-bar.js
+  - javascripts/reading-time.js
+  - javascripts/top-rocket.js
+  - javascripts/glitch.js
+  - javascripts/easter-egg.js
+  - javascripts/rotate-repo.js
+  - https://cdn.jsdelivr.net/npm/medium-zoom@1.0.8/dist/medium-zoom.min.js
+  - javascripts/zoom-images.js
+  - javascripts/link-preview.js
+
 
 plugins:
-  - search
-  - git-revision-date-localized:
-      enable_creation_date: true
-      fallback_to_build_date: true
-  - git-authors
+    - search
+    - git-revision-date-localized:
+        enable_creation_date: true
+        fallback_to_build_date: true
+    - git-authors
 
 extra:
   social:
-    - icon: fontawesome/brands/discord 
+    - icon: fontawesome/brands/discord
       link: https://discord.gg/ss220
 
 markdown_extensions:
@@ -70,7 +92,7 @@ nav:
       #  - Этап 1 - Проектирование:
       #    - mapping/1station/part1/idea.md # Идея, вдохновение
       #    - mapping/1station/part1/schematic.md # Чертежи
-      #    - mapping/1station/part1/dd.md # Дизайн-Документ 
+      #    - mapping/1station/part1/dd.md # Дизайн-Документ
       #  - Этап 2 - Маппинг:
       #    - mapping/1station/part2/preparation.md
       #    - Отделы:
@@ -117,7 +139,7 @@ nav:
     # - Углубленная теория:
     - spriting/software.md
     - Практика:
-      - spriting/firstsprite.md 
+      - spriting/firstsprite.md
       - spriting/rsi.md
     #- spriting/terminology.md
 
@@ -130,6 +152,6 @@ nav:
       - development/localization.md
       - development/basic-networking.md
     - development/ss220-guidelines.md
-    - advanced-development/introduction.md 
+    - advanced-development/introduction.md
     - Advanced:
-      - advanced-development/performance-troubleshooting.md  
+      - advanced-development/performance-troubleshooting.md

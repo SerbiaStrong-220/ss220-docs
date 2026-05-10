@@ -1,0 +1,28 @@
+:root {
+    /* --- Шрифты --- */
+    --font-primary:      'PressStart', serif;
+    --font-secondary:    'PixappInter', serif;
+    --font-body:         'Inter', 'Segoe UI', 'Roboto', system-ui, -apple-system, sans-serif;
+
+    /* --- Размеры шрифтов --- */
+    --font-size-base:    14px;
+    --font-size-small:   12px;
+    --font-size-body:    17px;
+    --font-size-title:   22px;
+    --font-size-heading: 26px;
+
+    /* --- Скругления --- */
+    --radius-card:       28px;
+    --radius-btn:        16px;
+    --radius-btn-sm:     8px;
+
+    /* --- Переходы --- */
+    --transition:        0.2s ease;
+
+    --header-glass-gradient: linear-gradient(
+        180deg,
+        rgba(85, 70, 160, 0.95) 0%,
+        rgba(65, 50, 130, 0.95) 50%,
+        rgba(50, 35, 110, 0.98) 100%
+    );
+}

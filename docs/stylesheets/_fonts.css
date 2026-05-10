@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@font-face {
+    font-family: 'PressStart';
+    src: url('../fonts/PressStart2pRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PixappInter';
+    src: url('../fonts/PixappInter.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
