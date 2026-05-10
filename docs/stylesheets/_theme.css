@@ -1,0 +1,88 @@
+/* Тёмная тема */
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color:          #1a1535;
+    --md-default-fg-color:          #e8e6f4;
+    --md-default-fg-color--light:   rgba(232, 230, 244, 0.72);
+    --md-default-fg-color--lighter: rgba(232, 230, 244, 0.42);
+
+    --md-primary-fg-color:          #8b7ec8;
+    --md-primary-bg-color:          #241e48;
+    --md-accent-fg-color:           #b0a0e0;
+
+    --md-code-bg-color:             rgba(28, 22, 58, 0.88);
+    --md-code-fg-color:             #c8d4ff;
+
+    --custom-color-primary:         #b0a0e0;
+    --custom-text-color:            #ffffff;
+    --custom-heading-color:         #ffffff;
+
+    --custom-search-bg:             rgba(10, 8, 25, 0.85);
+    --custom-search-icon:           #ffffff;
+    --custom-search-placeholder:    rgba(255, 255, 255, 0.5);
+
+    --custom-panel-bg:              rgba(22, 17, 48, 0.78);
+    --custom-panel-gradient:        linear-gradient(180deg, rgba(40, 35, 70, 0.65) 0%, rgba(15, 12, 35, 0.85) 100%);
+    --custom-glass-border:          1px solid rgba(255, 255, 255, 0.15);
+
+    --custom-shadow-glass:          0 8px 25px rgba(0, 0, 0, 0.6);
+    --custom-shadow-glow:           0 2px 8px rgba(176, 160, 224, 0.6);
+    --custom-text-shadow-hard:      4px 4px 0px rgba(0, 0, 0, 0.8);
+    --custom-text-shadow-soft:      2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+[data-md-color-scheme="slate"] body {
+    background-color: #1a1535;
+    background-image: url('/assets/images/EclipseStars.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Светлая тема */
+[data-md-color-scheme="default"] {
+    --md-primary-fg-color:          #5a4a90;
+    --md-primary-bg-color:          #ffffff;
+    --md-accent-fg-color:           #6c5ba0;
+
+    --custom-color-primary:         #5a4a90;
+    --custom-text-color:            #333333;
+    --custom-heading-color:         #111111;
+
+    --custom-search-bg:             rgba(255, 255, 255, 0.95);
+    --custom-search-icon:           #5a4a90;
+    --custom-search-placeholder:    rgba(51, 51, 51, 0.5);
+
+    --custom-panel-bg:              rgba(255, 255, 255, 0.85); /* Светлое стекло */
+    --custom-panel-gradient:        linear-gradient(180deg, rgba(255, 255, 255, 0.9) 0%, rgba(240, 240, 245, 0.95) 100%);
+    --custom-glass-border:          1px solid rgba(0, 0, 0, 0.1);
+
+    --custom-shadow-glass:          0 8px 25px rgba(0, 0, 0, 0.1);
+    --custom-shadow-glow:           0 2px 8px rgba(90, 74, 144, 0.4);
+
+    --custom-text-shadow-hard:      none;
+    --custom-text-shadow-soft:      none;
+}
+
+[data-md-color-scheme="default"] body {
+    background-color: #f4f4f9;
+    background-image: none;
+}
+
+/* Звёздная тема */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    transition: opacity 0.8s ease;
+}
+
+[data-md-color-scheme="default"] #particles-js {
+    opacity: 0;
+}
+
+[data-md-color-scheme="slate"] #particles-js {
+    opacity: 1;
+}
