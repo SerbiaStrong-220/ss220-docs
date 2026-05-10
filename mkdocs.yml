@@ -35,7 +35,6 @@ extra_css:
 extra_javascript:
   - https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js
   - javascripts/particles-init.js
-  - javascripts/particles-warp-speed.js
   - javascripts/reading-progress-bar.js
   - javascripts/reading-time.js
   - javascripts/top-rocket.js
@@ -153,6 +152,6 @@ nav:
       - development/localization.md
       - development/basic-networking.md
     - development/ss220-guidelines.md
-    - advanced-development/introduction.md 
+    - advanced-development/introduction.md
     - Advanced:
-      - advanced-development/performance-troubleshooting.md  
+      - advanced-development/performance-troubleshooting.md
