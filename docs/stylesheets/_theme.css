@@ -32,7 +32,7 @@
 
 [data-md-color-scheme="slate"] body {
     background-color: #1a1535;
-    background-image: url('/assets/images/EclipseStars.png');
+    background-image: url('../assets/images/EclipseStars.png');
     background-attachment: fixed;
     background-size: cover;
 }
